@@ -1,0 +1,87 @@
+Thank You for your response.I will make best possible efforts to match with you. 
+Yes,I can complete the incomplete chapters in C programming language tutorial.
+The list of topics I will cover are
+1.Array
+2.Recursion
+3.Storage Classes
+4.Pointers
+5.String
+6.Structure 
+7.Union
+8.Console Input/Output
+9.File Input/Output
+10.Operations on Bits
+11.Type Conversion
+12.Precedence and Associativity of Operators
+
+
+Array
+Arrays are fixed size linear data structures in which the elements are accessed by indicating its index value and reffered by the comman name.
+
+Test
+
+Q1.What is right way to declare array?
+A.int num[6] = {  };
+B.int n{} = {1,3,2,;4,4 };
+C.int n{6} = {1,2,3,4,5;6, };
+D.int n(6) = { 1,2,3,4,5,6 };
+
+Answer: Option A
+Solution:option (B), (C) and (D) are incorrect because array declaration syntax is wrong. Only square brackets([]) must be used for declaring an array.
+
+Q2.An array elements are always stored in --------------memory locations.
+A.Sequential
+B.Random
+C.Sequential and Random
+D.None of the above
+
+Answer: Option A
+
+Q3.Let x be an array.Which of the following are illegal?
+I.++x
+II.x+1
+III.x++
+IV.x*2
+
+A.I and II
+B.I, II and III
+C.II and III
+D.I, III and IV
+E.III and IV
+
+Answer: Option D
+Solution: int x[10]; * x will store the base address of array. *
+Statement I, III and IV is invalid.
+
+Statement I and III : ++x and x++ are throwing en error while compile (lvalue required as increment operand ) 
+Since, x is storing in the address of the array which is static value which cannot be change by the operand.
+
+Statement IV : x*2 is also throw an error while compile (invalid operands to binary * (have 'int *' and 'int') ) 
+
+Statement II : x+1 is throw a warning: assignment makes integer from pointer without a cast [enabled by default]
+
+
+Q4.An array passed as an argument to a function is interpreted as 
+A.Address of the array.
+B.Values of the first elements of the array.
+C.Address of the first element of the array.
+D.Number of element of the array.
+
+Answer: Option C
+
+Q5.What will be the output of the folling code?
+void main()
+{
+int a[10];
+printf("%d %d",a[-5],a[15]);
+}
+
+A.0 0
+B.Garbage value 0
+C.0 Garbage Value
+D.Garbage vlaue Garbage Value
+E.Code will not compile
+
+Answer: Option D
+Solution:
+In c compiler does not check array with its bounds, value at the computed location is displayed.
